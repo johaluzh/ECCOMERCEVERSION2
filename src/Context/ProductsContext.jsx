@@ -9,7 +9,7 @@ export const ProductProvider = ({ children }) => {
           const fetchData = async () => {
             try {
               // Puedes ajustar la ruta del archivo JSON según tu estructura de archivos.
-              const response = await fetch('/public/productos.json');
+              const response = await fetch('/productos.json');
               const data = await response.json();
               setProductos(data.productos);
             } catch (error) {
