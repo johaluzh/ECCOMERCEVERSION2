@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import 'public/CSS/style2.css';
+import '/public/CSS/styles2.css';
 
 
 const Carousell = ({ images }) => {
