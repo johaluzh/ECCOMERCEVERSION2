@@ -12,6 +12,8 @@
 }
 body{
     background-color: #D7C5F7 ;
+      width: 100%;
+      height: 100%;
 }
 
 /*LISTAS DE PRODUCTOS*/
@@ -638,16 +640,25 @@ button{
   *{
     box-sizing: border-box;
     margin: 0%;}
+  
+    body{
+      max-width: 28rem;
+      padding: -1rem;
+      margin-right: 0%;
+      
+      
+    }
 
-  .mini-nav{
-    width: 100%;
-  }
+
+
+  
     
   
   .footer-principal {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    max-width: 100%;
     
 }
 
@@ -769,6 +780,7 @@ height: 1.5rem;
 
 .contenedor-menu-hamburguesa {
   position: relative;
+  width: 100%;
  
 }
 
@@ -776,13 +788,12 @@ height: 1.5rem;
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  padding: 0;
+  width: 100vw;
+  padding-left: 1rem;
   position: absolute;
-  top: -0.5px;
-  left: 10px;
   background-color: #917FB3;
-  width: 100%;
- ;
+   z-index: 1000;
+ 
  
 }
 .menu-hamburguesa .barra {
@@ -792,6 +803,11 @@ height: 1.5rem;
   margin: 6px 0;
   transition: 0.4s;
   background-color: #8271a1;
+  
+}
+
+.menu-hamburguesa.abierto{
+  margin-top: 0.3rem;
 }
 
 .menu-hamburguesa.abierto .barra:nth-child(1) {
@@ -811,18 +827,17 @@ height: 1.5rem;
   display: flex;
  
   justify-content: flex-start;
-  width: 40rem; /* Ancho del menú desplegable */
-  height: 200rem;
+  width: 100vw; /* Ancho del menú desplegable */
+  height: auto;
   gap: .1875rem;
   
   flex-direction: column;
   align-items: flex-start;
-  padding: 0.625rem;
+ 
   background-color: #917FB3;
+  z-index: 10000;
  
   position: absolute;
-  top: 0;
-  left: 0;
   transform: translateX(-100%);
 
   transition: transform 0.3s ease-in-out;
@@ -831,7 +846,7 @@ height: 1.5rem;
 .nav-principal ul {
   list-style: none;
   margin-top: 1.5rem;
-  padding-top: 1.875rem;
+  padding-top: 2rem;
   padding-left: 10px;
   display: flex;
   flex-direction: column;
@@ -852,9 +867,14 @@ height: 1.5rem;
   gap: 2rem;
 }
 
+.contenedor-menu-hamburguesa > nav > ul{
+  padding-top: 5rem;
+}
+
 .nav-principal.abierto {
   transform: translateX(0);
   background-color: #917FB3;
+  width: 100vw;
   
 }
 
@@ -876,9 +896,7 @@ height: 1.5rem;
   align-items: center;
   position: relative;
   top: 45%;
-  left: -1%;
-  right: 35%;
-  width: 18rem;
+  width: 80vw;
  /* Ajusta la altura máxima según tus necesidades */
   overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
   background-color: #c3acec;
@@ -887,6 +905,7 @@ height: 1.5rem;
  
   z-index: 1;
   padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .lista-carrito{
@@ -900,7 +919,8 @@ height: 1.5rem;
 }
 
 .mini-nav{
-  width: 100%;
+ max-width: 100%;
+ margin: 0%;
 }
 
 }
