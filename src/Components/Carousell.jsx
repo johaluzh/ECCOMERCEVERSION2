@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '/public/styles2.css'; // Asegúrate de tener un archivo CSS para estilos
+import '/styles2.css'; // Asegúrate de tener un archivo CSS para estilos
 
 const Carousell = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
