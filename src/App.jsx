@@ -1,10 +1,11 @@
 // App.jsx
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet , Route, Routes} from 'react-router-dom';
 import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
 import MiniNav from './Components/MiniNav';
 import MenuHamburguesa from './Components/MenuHamburguesa';
+import Home from './Pages/Home';
 
 
 const App = () => {
@@ -13,6 +14,10 @@ const App = () => {
       <MiniNav />
       <MenuHamburguesa />
       <NavBar />
+
+      <Routes>
+      <Route path="/" element={<Home />} />
+      </Routes>
       
       <Outlet />
       <Footer />
