@@ -875,7 +875,6 @@ height: 1.5rem;
   transform: translateX(0);
   background-color: #917FB3;
   width: 100vw;
-  height: 100vh;
   
 }
 
@@ -898,6 +897,7 @@ height: 1.5rem;
   position: relative;
   top: 45%;
   width: 80vw;
+  height: auto;
  /* Ajusta la altura máxima según tus necesidades */
   overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
   background-color: #c3acec;
